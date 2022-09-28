@@ -1,0 +1,26 @@
+<%-include('layout/header.ejs')%>
+  
+  <div class="container">
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <main>
+                <h1>Register page</h1>
+              </main>
+            <form action="/register" method="post" class="border border-primary p-5">
+                <div class="mb-3">
+                    <label for="formGroupExampleInput" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="user name" name="username">
+                  </div>
+                  <div class="mb-3">
+                    <label for="formGroupExampleInput2" class="form-label">Password</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="password" name="password">
+                  </div>
+                  <button class="btn btn-primary" type="submit">Register</button>
+                </form>
+        </div>
+        <div class="col-4"></div>
+    </div>
+    
+  </div>
+  <%-include('layout/footer.ejs')%>
